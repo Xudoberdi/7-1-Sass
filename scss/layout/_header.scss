@@ -1,0 +1,21 @@
+.header {
+  padding : {
+    top: 2.7rem;
+    bottom: 2.7rem;
+  }
+  .container {
+    max-width: $container + 90px;
+    display: flex;
+    align-items: center;
+    // justify-content: end;
+  }
+
+  &__toggle--btn {
+    display: none;
+    @include responsive(phone) {
+      margin-left: auto;
+      background-color: #ffffff;
+      display: block;
+    }
+  }
+}

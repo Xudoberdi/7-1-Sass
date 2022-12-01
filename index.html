@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="css/main.css">
-   <script src="js/scripts.js" defer></script>
-   <script src="https://kit.fontawesome.com/7cca6fbe68.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <button class="header__toggle--btn">
+          <img
+            src="./images/svg/menu.svg"
+            alt="menu"
+            width="30"
+            height="18
+          " />
+        </button>
+        <nav class="sitenav hidden">
+          <ul>
+            <li>
+              <a href="#">Works</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <section>
+        <div class="container">
+          <div class="main__wrapper">
+            <h1>
+              Hi, I am John,<br />
+              Creative Technologist
+            </h1>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <a href="#">Download Resume</a>
+          </div>
+          <img
+            src="./images/png/john.png"
+            alt="john"
+            srcset="./images/png/john.png 1x, ./images/png/john@2x.png 2x" />
+        </div>
+      </section>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__top">
+            <h3>Recent posts</h3>
+            <a href="#"><span>View all</span></a>
+          </div>
+          <div class="hero__bottom">
+            <div class="left">
+              <h2>Making a design system from scratch</h2>
+              <p>12 Feb 2020 <span></span> Design, Pattern</p>
+              <span>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </span>
+            </div>
+            <div class="right">
+              <h2>Creating pixel perfect icons in Figma</h2>
+              <p>12 Feb 2020 <span></span> Figma, Icon Design</p>
+              <span>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <h2>Featured works</h2>
+          <ul>
+            <li>
+              <img
+                src="./images/png/Dashboards.png"
+                alt="Designing Dashboards"
+                srcset="
+                  ./images/png/Dashboards.png    1x,
+                  ./images/png/Dashboards@2x.png 2x
+                " />
+              <div>
+                <h3>Designing Dashboards</h3>
+                <h6><span>2020</span>Dashboard</h6>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/png/Portraits.png"
+                alt="Vibrant Portraits of 2020"
+                srcset="
+                  ./images/png/Portraits.png    1x,
+                  ./images/png/Portraits@2x.png 2x
+                " />
+              <div>
+                <h3>Vibrant Portraits of 2020</h3>
+                <h6><span>2018</span>Illustration</h6>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                class="pic"
+                src="./images/png/Malayalam.png"
+                alt="36 Days of Malayalam type"
+                srcset="
+                  ./images/png/Malayalam.png    1x,
+                  ./images/png/Malayalam@2x.png 2x
+                " />
+              <div>
+                <h3>36 Days of Malayalam type</h3>
+                <h6><span>2018</span>Typography</h6>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img src="./images/svg/insta.svg" alt="instagram" />
+          <img src="./images/svg/fb.svg" alt="facebook" />
+          <img src="./images/svg/twitter.svg" alt="twitter" />
+          <img src="./images/svg/Linkedin.svg" alt="Linkedin" />
+        </div>
+        <p>Copyright ©2020 All rights reserved</p>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>
