@@ -1,5 +1,5 @@
 const toggleBtn = document.querySelector(".header__togle--btn");
-const nav = document.querySelector("nav");
+const sitenav = document.querySelector(".sitenav");
 
 toggleBtn.addEventListener("click", () => {
   sitenav.classList.toggle("hidden");
