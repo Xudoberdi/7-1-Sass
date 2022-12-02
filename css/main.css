@@ -711,8 +711,8 @@ h2 {
 }
 @media screen and (max-width: 419px) {
   .works li img {
-    height: 230px;
-    width: 339px;
+    height: auto;
+    width: 100%;
   }
 }
 .works li h3 {

@@ -236,8 +236,8 @@
       -o-border-radius: 6px;
 
       @include responsive(phone) {
-        height: 230px;
-        width: 339px;
+        height: auto;
+        width: 100%;
       }
     }
     h3 {
