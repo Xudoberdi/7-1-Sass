@@ -8,14 +8,55 @@
       font-weight: 500;
       color: #000000;
       line-height: 1.45;
-      transition: 0.3;
-      -webkit-transition: 0.3;
-      -moz-transition: 0.3;
-      -ms-transition: 0.3;
-      -o-transition: 0.3;
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
     }
     a:hover {
-      opacity: 0.5;
+      color: #ff0000;
+    }
+    li {
+      position: relative;
+    }
+    a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      visibility: hidden;
+      background-color: red;
+      transition: width 0.4s linear;
+      -webkit-transition: width 0.3s linear;
+      -moz-transition: width 0.4s linear;
+      -ms-transition: width 0.4s linear;
+      -o-transition: width 0.4s linear;
+    }
+    a:hover::after {
+      width: 100%;
+      visibility: visible;
+    }
+    a:hover::before {
+      width: 100%;
+      visibility: hidden;
+    }
+    a::before {
+      content: "";
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      top: -5px;
+      right: 0;
+      visibility: visible;
+      background-color: red;
+      transition: width 0.4s linear;
+      -webkit-transition: width 0.4s linear;
+      -moz-transition: width 0.4s linear;
+      -ms-transition: width 0.4s linear;
+      -o-transition: width 0.4s linear;
     }
   }
   @include responsive(phone) {
