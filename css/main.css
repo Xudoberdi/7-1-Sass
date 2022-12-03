@@ -384,6 +384,13 @@ input {
   font-weight: 700;
   src: local(""), url("../fonts/heebo-v21-latin-700.woff2") format("woff2"), url("../fonts/heebo-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* heebo-900 - latin */
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/heebo-v21-latin-900.woff2") format("woff2"), url("../fonts/heebo-v21-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html {
   font-size: 62.5%;
 }
@@ -873,4 +880,236 @@ h2 {
 button {
   border: 0;
   cursor: pointer;
+}
+
+.blog .container {
+  padding-top: 8rem;
+  padding-right: 21rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .blog .container {
+    padding-right: 13rem;
+  }
+}
+@media screen and (max-width: 689px) {
+  .blog .container {
+    padding-right: 7rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .blog .container {
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 419px) {
+  .blog .container {
+    padding-right: 2rem;
+  }
+}
+.blog .container h1 {
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.36;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blog .container h1 {
+    font-size: 3rem;
+  }
+}
+.blog ul {
+  display: flex;
+  flex-direction: column;
+}
+.blog ul h2 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+  color: #21243d;
+}
+@media screen and (max-width: 599px) {
+  .blog ul h2 {
+    font-size: 2.6rem;
+  }
+}
+.blog p {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blog p {
+    font-size: 1.6rem;
+  }
+}
+.blog p span {
+  border: 0.1px solid #21243d;
+  width: 0px;
+  height: 21px;
+  opacity: 0.5;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem;
+  text-align: left;
+}
+.blog p .text {
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blog p .text {
+    text-align: left;
+  }
+}
+.blog p .span {
+  border: transparent;
+  margin-left: 0;
+}
+.blog hr {
+  border: 1px solid #e0e0e0;
+  opacity: 0.5;
+  margin-top: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.work .container {
+  display: flex;
+  flex-direction: column;
+}
+.work h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.4rem;
+  line-height: 1.36;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 689px) {
+  .work h2 {
+    text-align: left;
+    line-height: 2.73;
+  }
+}
+@media screen and (max-width: 419px) {
+  .work h2 {
+    font-size: 3rem;
+  }
+}
+.work ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4.6rem;
+}
+@media screen and (max-width: 419px) {
+  .work li:not(:last-child):nth-of-type(1n + 2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .work li:not(:last-child):nth-of-type(1n + 2) {
+    display: none;
+  }
+}
+.work li {
+  display: flex;
+  gap: 1.8rem;
+}
+@media screen and (max-width: 689px) {
+  .work li {
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+  }
+}
+.work li img {
+  display: flex;
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0;
+}
+@media screen and (max-width: 419px) {
+  .work li img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .work li img {
+    height: auto;
+    width: 100%;
+  }
+}
+.work li h3 {
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.46;
+  color: #21243d;
+}
+@media screen and (max-width: 689px) {
+  .work li h3 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 419px) {
+  .work li h3 {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+}
+.work li h6 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: #8695a4;
+}
+@media screen and (max-width: 689px) {
+  .work li h6 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 419px) {
+  .work li h6 {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}
+.work li span {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 3.33;
+  background: #142850;
+  border-radius: 16px;
+  color: #ffffff;
+  width: 62px;
+  height: 25px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: 2.6rem;
+}
+@media screen and (max-width: 419px) {
+  .work li span {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 689px) {
+  .work li p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 419px) {
+  .work li p {
+    text-align: left;
+  }
+}
+.work .pic {
+  width: 246px;
+  height: 184px;
 }
