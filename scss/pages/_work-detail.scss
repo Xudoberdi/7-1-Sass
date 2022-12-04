@@ -1,0 +1,94 @@
+.dashboards {
+  .container {
+    max-width: 721px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    @include responsive(m-phone) {
+      justify-content: left;
+    }
+  }
+  h1 {
+    margin: 0;
+    margin-bottom: 3rem;
+    text-align: left;
+    @include responsive(m-phone) {
+      font-size: 3rem;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+  h6 {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-dark;
+    margin-bottom: 2.3rem;
+    text-align: left;
+    span {
+      font-weight: 900;
+      font-size: 18px;
+      background: $color-primary;
+      border-radius: 16px;
+      color: #ffffff;
+      width: 62px;
+      height: 25px;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-right: 2.6rem;
+      margin-bottom: auto;
+    }
+  }
+  p {
+    text-align: left;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.heading {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 721px;
+  }
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    @include responsive(phone) {
+      font-size: 2.8rem;
+    }
+  }
+  &__top {
+    h4 {
+      text-align: left;
+      font-size: 2.4rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+      @include responsive(phone) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
